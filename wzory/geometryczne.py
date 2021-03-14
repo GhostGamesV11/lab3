@@ -6,7 +6,7 @@ def nty_wyraz(a,q,n):
 def suma_nwyrazow(a,q,n):
     print("Wybrałeś wzór na sume n wyrazow ciągu")
     if q!=1:
-        suma = a * (1 - q**n)/(1 - q)
+        suma = (a * ((1 - q**n) / (1 - q)))
         print(suma)
     else:
         suma = a * n

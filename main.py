@@ -1,5 +1,5 @@
 import random
-
+from wzory import *
 
 #zad1
 # a =[1-x for x in range(1,11)]
@@ -38,32 +38,36 @@ import random
 
 #zad 3
 # produkty={'pomidory':'sztuki','orzechy':'kg','ziemniaki':'kg'}
-# sztuki={}
-# for value,key in produkty.items():
-#     if value == 'sztuki':
-#         sztuki[key]=value
+# sztuki={key:value for key,value in produkty.items() if value=='sztuki'}
 # print(sztuki)
 
 
 #Zad 4
 
-# print("Podaj 3 boki trójkąta: ")
-# a = int("Podaj dlugosc podstawy:")
-# b = int("Podaj dlugosc drugiego boku: ")
-# c = int("Podaj dlugosc trzciego boku: ")
-# trojkat = a**2 + b**2
-#
-# if trojkat = c**2:
-#     print("Ten trójkąt jest prostkątny")
-# else
-#     print("Ten trójkąt nie jest prostkątny")
+# def trojkat_prostokatny(a,b,c):
+#     if a**2 + b**2 == c**2:
+#         print("jest prostokatny")
+#         return 1
+#     elif a**2 + c**2 == b**2:
+#         print("jest prostokatny")
+#         return 1
+#     elif b**2 + c**2 == a**2:
+#         print("jest prostokatny")
+#         return 1
+#     else:
+#         print("nie jest prostokatny")
+#         return 0
 
 #zad5
-# def pole_trapezu(a=1,b=1,h=3):
+# def pole_trapezu(a=0,b=0,h=0):
 #      pole = ((a+b) * h)/2
-# print(pole_trapezu())
-
+#      return pole
 #zad6
+# def ciag(a=1,b=4,ile=10)
+#     lista = []
+#     for i in range(a,ile+a)
+#         lista.append(i*b)
+#     return lista
 
 #zad 7
 # a = 1
@@ -79,13 +83,19 @@ import random
 # print(ciag(a,2,3,4,5))
 
 #zad 8
-# print("Wpisz liste swoich zakupów w formie ||| lista_zakupów(nazwa_produktu = koszt) ||| zakończ #)")
-# def lista_zakupów(** rzeczy):
-#     if
-#     for key,value in rzeczy:
-#         key+=
+# def zakupy(** rzeczy):
+#     wartosc = 0
+#     ilosc = len(rzeczy.items())
+#     for i in rzeczy.values():
+#         wartosc += i
+#     return ilosc, wartosc
 
 
+#zad 9
+# print(arytmetyczne.nty_wyraz(1, 3, 9))
+# print(arytmetyczne.suma_nwyrazow(2, 3, 4))
+# print(geometryczne.nty_wyraz(3, 5, 6))
+# print(geometryczne.suma_nwyrazow(2, 4, 8))
 
 
 
